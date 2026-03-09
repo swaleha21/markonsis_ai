@@ -213,8 +213,10 @@ export default function StartupSprintLanding() {
         </div>
       </div>
 
-      <Testimonials />
-      <CustomCrowd />
-    </>
+  
+  
+  <Testimonials />
+  <CustomCrowd />
+   </>
   )
 }
