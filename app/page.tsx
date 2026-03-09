@@ -215,8 +215,8 @@ export default function StartupSprintLanding() {
 
   
   
-  <Testimonials />
-  <CustomCrowd />
+  
+  
    </>
   )
 }
