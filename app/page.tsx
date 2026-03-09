@@ -1,136 +1,23 @@
 "use client"
 
 import Link from "next/link"
-<<<<<<< Updated upstream
-=======
 import { useState } from "react"
->>>>>>> Stashed changes
 import { Testimonials } from "@/components/testimonials/Testimonials"
 import { CustomCrowd } from "@/components/Footer"
 
 export default function StartupSprintLanding() {
-<<<<<<< Updated upstream
-  return (
-    <>
-      {/* HERO SECTION */}
-=======
   const [showContact, setShowContact] = useState(false)
 
   return (
     <>
->>>>>>> Stashed changes
       <div
         className="min-h-screen text-white relative overflow-hidden overflow-x-hidden no-scrollbar"
         style={{ background: "#0a0100" }}
       >
-<<<<<<< Updated upstream
-        {/* Background blobs */}
-=======
->>>>>>> Stashed changes
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div
             className="absolute inset-0"
             style={{
-<<<<<<< Updated upstream
-              background:
-                "radial-gradient(ellipse 120% 80% at 50% 120%, #1a0500 0%, #0a0100 60%, #000 100%)",
-            }}
-          />
-
-          <div
-            className="absolute rounded-full"
-            style={{
-              width: "80vw",
-              height: "70vh",
-              bottom: "-20vh",
-              left: "10vw",
-              background:
-                "radial-gradient(circle, #ff4500cc 0%, #c2300088 40%, transparent 70%)",
-              filter: "blur(60px)",
-              animation: "blob1 14s ease-in-out infinite",
-            }}
-          />
-
-          <div
-            className="absolute rounded-full"
-            style={{
-              width: "55vw",
-              height: "55vh",
-              top: "-15vh",
-              right: "-10vw",
-              background:
-                "radial-gradient(circle, #ffb30099 0%, #ff660066 45%, transparent 70%)",
-              filter: "blur(70px)",
-              animation: "blob2 18s ease-in-out infinite",
-            }}
-          />
-
-          <div
-            className="absolute rounded-full"
-            style={{
-              width: "50vw",
-              height: "60vh",
-              top: "20vh",
-              left: "-15vw",
-              background:
-                "radial-gradient(circle, #cc100088 0%, #8b000066 50%, transparent 70%)",
-              filter: "blur(80px)",
-              animation: "blob3 22s ease-in-out infinite",
-            }}
-          />
-        </div>
-
-        {/* Blob animations */}
-        <style>{`
-          @keyframes blob1 {
-            0%,100% { transform: translate(0,0) scale(1); }
-            33% { transform: translate(-4vw,-6vh) scale(1.08); }
-            66% { transform: translate(5vw,4vh) scale(0.93); }
-          }
-
-          @keyframes blob2 {
-            0%,100% { transform: translate(0,0) scale(1); }
-            33% { transform: translate(-6vw,8vh) scale(1.12); }
-            66% { transform: translate(4vw,-5vh) scale(0.9); }
-          }
-
-          @keyframes blob3 {
-            0%,100% { transform: translate(0,0) scale(1); }
-            33% { transform: translate(6vw,-4vh) scale(1.06); }
-            66% { transform: translate(-3vw,7vh) scale(0.95); }
-          }
-        `}</style>
-
-        {/* HERO CONTENT */}
-        <div className="flex flex-col items-center justify-center min-h-screen px-6 relative z-10">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl md:text-8xl font-semibold tracking-tight text-white mb-2">
-              One place for
-            </h1>
-
-            <h2 className="text-3xl md:text-8xl font-semibold tracking-tight text-white/80">
-              every AI model.
-            </h2>
-          </div>
-
-          <p className="text-white/50 text-lg md:text-2xl text-center tracking-tight max-w-2xl mb-12">
-            You're close <br /> but we're built to do it better.
-          </p>
-
-          {/* BUTTONS */}
-          <div className="w-full max-w-md">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
-                href="/chat"
-                className="px-6 py-3 rounded-full font-semibold bg-red-600 hover:bg-red-500 transition"
-              >
-                Start Chat
-              </Link>
-
-              <Link
-                href="/compare"
-                className="px-6 py-3 rounded-full border border-red-300 hover:bg-white/10 transition"
-=======
               background: "radial-gradient(ellipse 120% 80% at 50% 120%, #1a0500 0%, #0a0100 60%, #000 100%)",
             }}
           />
@@ -148,7 +35,6 @@ export default function StartupSprintLanding() {
         `}</style>
 
         <div className="flex flex-col items-center justify-center min-h-screen px-6 relative z-10">
-
           <div className="text-center mb-8">
             <h1 className="text-5xl md:text-8xl font-bold tracking-tight text-white mb-4">Markonsis AI</h1>
             <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-white/60">Smarter AI. Better Results.</h2>
@@ -162,15 +48,11 @@ export default function StartupSprintLanding() {
               <button
                 onClick={() => setShowContact(!showContact)}
                 className="px-8 py-3 rounded-full border border-red-300/50 hover:bg-white/10 transition text-white font-medium"
->>>>>>> Stashed changes
               >
                 Contact Us
               </button>
             </div>
-<<<<<<< Updated upstream
-=======
 
-            {/* Backdrop */}
             {showContact && (
               <div
                 className="fixed inset-0 bg-black/50 z-[9998]"
@@ -178,7 +60,6 @@ export default function StartupSprintLanding() {
               />
             )}
 
-            {/* Contact Popup - centered on screen */}
             {showContact && (
               <div className="contact-popup fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 rounded-2xl border border-white/15 bg-black/90 backdrop-blur-xl shadow-2xl p-6 z-[9999]">
                 <button onClick={() => setShowContact(false)} className="absolute top-3 right-4 text-white/40 hover:text-white text-xl leading-none">×</button>
@@ -217,39 +98,10 @@ export default function StartupSprintLanding() {
                 </div>
               </div>
             )}
->>>>>>> Stashed changes
           </div>
         </div>
       </div>
 
-<<<<<<< Updated upstream
-      {/* TESTIMONIAL SECTION */}
-      <div
-        className="min-h-screen w-full relative overflow-hidden"
-        style={{ background: "#0a0100" }}
-      >
-        <div className="relative z-10 pb-0">
-          <Testimonials />
-        </div>
-      </div>
-
-      {/* BIG OPEN FIESTA TEXT */}
-      <div className="bg-black py-12 flex items-center justify-center overflow-hidden">
-        <h1
-          className="text-[clamp(2rem,18vw,20rem)] text-white uppercase tracking-[0.06em] leading-none select-none animate-pulse"
-          style={{
-            fontFamily:
-              'Impact,"Arial Black","Franklin Gothic Bold",Charcoal,sans-serif',
-            fontWeight: 900,
-          }}
-        >
-          OPEN FIESTA
-        </h1>
-      </div>
-
-      {/* FOOTER */}
-      <CustomCrowd />
-=======
       {/* FEATURES SECTION */}
       <div className="bg-black py-24 px-6">
         <div className="max-w-5xl mx-auto">
@@ -257,7 +109,6 @@ export default function StartupSprintLanding() {
           <p className="text-center text-white/50 text-lg mb-16 max-w-xl mx-auto">One unified interface for all leading AI models — no switching tabs, no multiple subscriptions.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-red-500/30 transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-red-600/20 flex items-center justify-center mb-4 group-hover:bg-red-600/30 transition">
                 <svg className="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
@@ -318,7 +169,6 @@ export default function StartupSprintLanding() {
                 <p className="text-white/50 text-sm leading-relaxed max-w-2xl">Powered by Markonsis AI — next-generation intelligence built for real-world tasks. Experience smarter, faster, and more contextual responses tailored to your needs.</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -330,7 +180,6 @@ export default function StartupSprintLanding() {
           <p className="text-white/50 text-lg mb-16 max-w-xl mx-auto">Have questions or want to work with us? Reach out to the Markonsis team.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
             <a href="mailto:contact@markonsis.com" className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-red-500/30 transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-red-600/20 flex items-center justify-center group-hover:bg-red-600/30 transition">
                 <svg className="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
@@ -360,15 +209,12 @@ export default function StartupSprintLanding() {
                 <p className="text-white font-medium text-sm">Pune, Maharashtra, India</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-      
-
-      
->>>>>>> Stashed changes
+      <Testimonials />
+      <CustomCrowd />
     </>
   )
 }
