@@ -2,6 +2,7 @@ import type { NextConfig } from 'next';
 import withPWA from '@ducanh2912/next-pwa';
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: process.env.NODE_ENV === 'production',
   },
@@ -14,15 +15,15 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   env: {
-    NEXT_PUBLIC_APP_URL: process.env.APP_URL || 'http://localhost:3000',
-    NEXT_PUBLIC_SHARE_URL_BASE: process.env.SHARE_URL_BASE || process.env.APP_URL || 'http://localhost:3000',
+    NEXT_PUBLIC_APP_URL: process.env.APP_URL || 'https://steelblue-curlew-442086.hostingersite.com',
+    NEXT_PUBLIC_SHARE_URL_BASE: process.env.SHARE_URL_BASE || process.env.APP_URL || 'https://steelblue-curlew-442086.hostingersite.com',
   },
   async headers() {
     const isProduction = process.env.NODE_ENV === 'production';
     const headers = [];
 
     if (isProduction) {
-      const allowedOrigins = process.env.CORS_ORIGIN?.split(',') || ['https://localhost:3000'];
+      const allowedOrigins = process.env.CORS_ORIGIN?.split(',') || ['https://steelblue-curlew-442086.hostingersite.com'];
 
       headers.push({
         source: '/(.*)',

@@ -1,4 +1,10 @@
 RewriteEngine On
+
+# Allow _next/static files to pass through directly
+RewriteCond %{REQUEST_URI} ^/_next/
+RewriteRule ^ - [L]
+
+# Proxy everything else to Next.js
 RewriteRule ^$ http://127.0.0.1:3000/ [P,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
