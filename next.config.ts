@@ -2,7 +2,6 @@ import type { NextConfig } from 'next';
 import withPWA from '@ducanh2912/next-pwa';
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: process.env.NODE_ENV === 'production',
   },
